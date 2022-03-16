@@ -257,7 +257,7 @@ const Header: React.FC = () => {
   const toggleWalletModal = useWalletModalToggle();
   const menuItems = [
     {
-      link: '/swap',
+      link: '/',
       text: 'Swap',
       id: 'swap-page-link',
     },
@@ -266,7 +266,7 @@ const Header: React.FC = () => {
       text: 'Pool',
       id: 'pools-page-link',
     },
-    {
+    /* {
       link: '/farm',
       text: 'Farm',
       id: 'farm-page-link',
@@ -280,7 +280,7 @@ const Header: React.FC = () => {
       link: '/analytics',
       text: 'Analytics',
       id: 'analytics-page-link',
-    },
+    }, */
   ];
 
   const outLinks: any[] = [
@@ -318,7 +318,7 @@ const Header: React.FC = () => {
         confirmedTransactions={confirmed}
       />
       <Link to='/'>
-        <img src={mobileWindowSize ? QuickIcon : QuickLogo} alt='QuickLogo' />
+        {/* <img src={mobileWindowSize ? QuickIcon : QuickLogo} alt='QuickLogo' /> */}
       </Link>
       {!tabletWindowSize && (
         <Box className={classes.mainMenu}>
@@ -331,6 +331,7 @@ const Header: React.FC = () => {
                 pathname.indexOf(val.link) > -1 ? 'active' : 'menuItem'
               }
             >
+              {console.log(pathname.indexOf(val.link))}
               <Typography variant='body2'>{val.text}</Typography>
             </Link>
           ))}

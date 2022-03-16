@@ -114,12 +114,12 @@ const App: React.FC = () => {
                   <Switch>
                     <Route exact path='/'>
                       <PageLayout>
-                        <LandingPage />
+                        <SwapPage />
                       </PageLayout>
                     </Route>
                     <Route exact path='/swap'>
                       <PageLayout>
-                        <SwapPage />
+                        <LandingPage />
                       </PageLayout>
                     </Route>
                     <Route exact path='/pools'>
