@@ -34,7 +34,6 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
 
   return (
     <Box className={classes.page}>
-      <BetaWarningBanner />
       <Header />
       <Background fallback={false} />
       <Box className={classes.pageWrapper}>{children}</Box>
