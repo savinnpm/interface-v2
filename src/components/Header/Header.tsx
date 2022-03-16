@@ -257,7 +257,7 @@ const Header: React.FC = () => {
   const toggleWalletModal = useWalletModalToggle();
   const menuItems = [
     {
-      link: '/swap',
+      link: '/',
       text: 'Swap',
       id: 'swap-page-link',
     },
