@@ -21,8 +21,7 @@ const Footer: React.FC = () => {
 
   return (
     <Box className={classes.footer}>
-      <QuickIcon />
-      <Typography>© 2021 QuickSwap.</Typography>
+      <Typography>© 2021 Neptune Mutual.</Typography>
     </Box>
   );
 };
